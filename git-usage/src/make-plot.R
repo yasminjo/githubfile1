@@ -26,3 +26,7 @@ ggsave(filename = "out/git-usage.png",
 sink(file = "out/regression-summary.txt")
 summary(lm(percentage ~ year, data = sods_data))
 sink()
+
+sink(file = "out/package-versions.txt")
+sessionInfo()
+sink()
